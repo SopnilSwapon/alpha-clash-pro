@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
                 <kbd id="y" class="kbd">y</kbd>
                 <kbd id="u" class="kbd">u</kbd>
                 <kbd id="i" class="kbd">i</kbd>
-                <kbd id="0" class="kbd">o</kbd>
+                <kbd id="o" class="kbd">o</kbd>
                 <kbd id="p" class="kbd">p</kbd>
               </div> 
               <div class="flex justify-center gap-1 my-1 w-full">
@@ -59,7 +59,7 @@
                 <kbd id="h" class="kbd">h</kbd>
                 <kbd id="j" class="kbd">j</kbd>
                 <kbd id="k" class="kbd">k</kbd>
-                <kbd id="q"l class="kbd">l</kbd>
+                <kbd id="l" class="kbd">l</kbd>
               </div> 
               <div class="flex justify-center gap-1 my-1 w-full">
                 <kbd id="z" class="kbd">z</kbd>
@@ -75,17 +75,19 @@
          <!-- score -->
          <div class="flex justify-around">
            <div>
+            <!-- current life -->
             <button class="btn bg-[#894189] text-white">
                 Life
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                <span>1</span>
+                <span id="current-life">5</span>
               </button>
            </div>
+           <!-- current score -->
            <div>
             <button class="btn bg-[#240490] text-white">
                 Score
                 <i class="fa-solid fa-dollar-sign"></i>
-                <span>1</span>
+                <span id="current-score">0</span>
               </button>
            </div>
          </div>
