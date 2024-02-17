@@ -30,7 +30,10 @@ function handleKeyboardKeyUpPress(event) {
     else {
         const aliveLife = getTextElementValueById('current-life');
         const updateLife = aliveLife - 1;
-        updateTextValue('current-life', updateLife)
+        updateTextValue('current-life', updateLife);
+        if(updateLife === 0){
+         gameOver();
+        }
 
         // .....................................//
         // const currentLifeElement = document.getElementById('current-life');
@@ -38,6 +41,9 @@ function handleKeyboardKeyUpPress(event) {
         // const aliveLife = parseInt(currentLife);
         // currentLifeElement.innerText = aliveLife - 1;
     };
+}
+function gameOver(){
+    getField('your-field', 'your-score');
 }
 
 function getTextElementValueById(elementId) {
